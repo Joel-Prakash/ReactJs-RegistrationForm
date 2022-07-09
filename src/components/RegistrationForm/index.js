@@ -41,7 +41,13 @@ class RegistrationForm extends Component {
   }
 
   onClickingSubmitAnotherFormBtn = () => {
-    this.setState({formSubmit: false})
+    this.setState({
+      firstName: '',
+      lastName: '',
+      showErrorMsg1: false,
+      showErrorMsg2: false,
+      formSubmit: false,
+    })
   }
 
   render() {
